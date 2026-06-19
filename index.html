@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Foodie Hub</title>
+<style>
+body{
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+</style>
+<style>
+.logo{
+  width:250px;
+  height:250px;
+  border-radius:50%;
+  vertical-align:middle;
+  margin-right:10px;
+}
+
+h1{
+  text-align:center;
+  font-size:80px;
+}
+
+nav{
+  text-align:center;
+}
+
+nav a{
+  border:3px solid black;
+  padding:10px 25px;
+  font-size:30px;
+  text-decoration:none;
+  margin:10px;
+  display:inline-block;
+}
+
+.dropdown{
+  position:relative;
+  display:inline-block;
+}
+
+.dropdown-content{
+  display:none;
+  position:absolute;
+  background:black;
+  width:120px;
+  z-index:9999;
+  border:3px solid white;
+}
+
+.dropdown-content a{
+  display:block;
+  padding:8px;
+  font-size:14px;
+  text-decoration:none;
+  color:white;
+  border-bottom:3px solid gray;
+}
+
+.dropdown:hover .dropdown-content{
+  display:block;
+}
+
+h2{
+  text-align:center;
+  font-size:40px;
+}
+
+.container{
+  display:grid;
+  grid-template-columns:repeat(3,300px);
+  justify-content:center;
+  gap:50px;
+}
+
+.box{
+  width:300px;
+  border:3px solid black;
+  padding:10px;
+  text-align:center;
+  box-shadow:2px 2px 8px gray;
+}
+
+.box img{
+  transition:0.5s;
+}
+
+.box img:hover{
+  transform:scale(1.1);
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>
+  <img src="chief .jpg.jpg" class="logo">
+  The King Land
+</h1>
+
+<nav>
+  <a href="1.html">Home</a>
+  <a href="about.html">About</a>
+
+  <div class="dropdown">
+    <a href="#">Menu</a>
+    <div class="dropdown-content">
+      <a href="veg.html">Veg Thali</a>
+      <a href="ice-cream.html">Ice Cream</a>
+      <a href="fast food.html">Fast Food</a>
+      <a href="drink.html">Drink</a>
+      <a href="non-veg.html">Non Veg</a>
+    </div>
+  </div>
+
+  <a href="order.html">Order</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<br>
+<div class="slider">
+    <div class="slide-track">
+
+        <img src="veg thali.jpg">
+        <img src="banana-ice-cream.jpg">
+        <img src="best-pizza-singapore.jpg">
+        <img src="harbal tea.jpg.jpg">
+        <img src="hot coffee.jpg">
+        <img src="penne-arrabbiata.jpg">
+        <img src="orange juice.jpg">
+        
+        <img src="veg thali.jpg">
+        <img src="banana-ice-cream.jpg">
+        <img src="best-pizza-singapore.jpg">
+        <img src="harbal tea.jpg.jpg">
+        <img src="hot coffee.jpg">
+        <img src="penne-arrabbiata.jpg">
+        <img src="orange juice.jpg">
+    </div>
+</div>
+
+<style>
+.slider{
+    width:100%;
+    overflow:hidden;
+    padding:10px 0;
+}
+
+.slide-track{
+    display:flex;
+    width:max-content;
+    animation:scroll 20s linear infinite;
+}
+
+.slide-track img{
+    width:300px;
+    height:200px;
+    border:3px solid black;
+    margin-right:15px;
+    border-radius:10px;
+}
+
+@keyframes scroll{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
+</style>
+<h2>Top Food Items</h2>
+
+<div class="container">
+
+  <div class="box">
+    <img src="banana-ice-cream.jpg" width="300" height="250">
+    <h3>Banana Ice Cream</h3>
+    <p>₹150</p>
+  </div>
+
+  <div class="box">
+    <img src="veg thali.jpg" width="300" height="250">
+    <h3>Veg Thali</h3>
+    <p>₹1000</p>
+  </div>
+
+  <div class="box">
+    <img src="best-pizza-singapore.jpg" width="300" height="250">
+    <h3>Paneer Pizza</h3>
+    <p>₹800</p>
+  </div>
+
+  <div class="box">
+    <img src="harbal tea.jpg.jpg" width="300" height="250">
+    <h3>Herbal Tea</h3>
+    <p>₹200</p>
+  </div>
+
+  <div class="box">
+    <img src="hot coffee.jpg" width="300" height="250">
+    <h3>Hot Coffee</h3>
+    <p>₹150</p>
+  </div>
+
+  <div class="box">
+    <img src="penne-arrabbiata.jpg" width="300" height="250">
+    <h3>Red Sauce Pasta</h3>
+    <p>₹250</p>
+  </div>
+
+  <div class="box">
+    <img src="orange juice.jpg" width="300" height="250">
+    <h3>Orange Juice</h3>
+    <p>₹50</p>
+  </div>
+
+  <div class="box">
+    <img src="grilled-chicken-burger-.jpg" width="300" height="250">
+    <h3>Chicken Burger</h3>
+    <p>₹350</p>
+  </div>
+
+  <div class="box">
+    <img src="delicious.jpg" width="300" height="250">
+    <h3>Non-Veg Dishes</h3>
+    <p>₹400</p>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Foodie Hub</title>
+<style>
+body{
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+</style>
+<style>
+.logo{
+  width:250px;
+  height:250px;
+  border-radius:50%;
+  vertical-align:middle;
+  margin-right:10px;
+}
+        h2{
+        text-align:left;
+         font-size:30px;
+        }
+                h3{
+        text-align:center;
+         font-size:40px;
+        }
+
+
+        
+        .team{
+            text-align: center;
+            font-size: 40px;
+        }
+    .container{
+        display: flex;
+        gap: 200px;
+    }
+    .box p{
+        color: rgb(0, 8, 255);
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+    }
+        .box q{
+        color: rgb(51, 0, 255);
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+
+h1{
+  text-align:center;
+  font-size:80px;
+}
+
+nav{
+  text-align:center;
+}
+
+nav a{
+  border:3px solid black;
+  padding:10px 25px;
+  font-size:30px;
+  text-decoration:none;
+  margin:10px;
+  display:inline-block;
+}
+
+.dropdown{
+  position:relative;
+  display:inline-block;
+}
+
+.dropdown-content{
+  display:none;
+  position:absolute;
+  background:black;
+  width:120px;
+  z-index:9999;
+  border:3px solid white;
+}
+
+.dropdown-content a{
+  display:block;
+  padding:8px;
+  font-size:14px;
+  text-decoration:none;
+  color:white;
+  border-bottom:3px solid gray;
+}
+
+.dropdown:hover .dropdown-content{
+  display:block;
+}
+
+.container{
+  display:grid;
+  grid-template-columns:repeat(2,300px);
+  justify-content:center;
+  gap:50px;
+}
+
+.box{
+  width:300px;
+  border:3px solid black;
+  padding:10px;
+  text-align:center;
+  box-shadow:2px 2px 8px gray;
+}
+
+.box img{
+  transition:0.5s;
+}
+
+.box img:hover{
+  transform:scale(1.1);
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>
+  <img src="chief .jpg.jpg" class="logo">
+  The King Land
+</h1>
+
+<nav>
+  <a href="1.html">Home</a>
+  <a href="about.html">About</a>
+
+  <div class="dropdown">
+    <a href="#">Menu</a>
+    <div class="dropdown-content">
+      <a href="veg.html">Veg Thali</a>
+      <a href="ice-cream.html">Ice Cream</a>
+      <a href="fast food.html">Fast Food</a>
+      <a href="drink.html">Drink</a>
+      <a href="non-veg.html">Non Veg</a>
+    </div>
+  </div>
+
+  <a href="order.html">Order</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<style>
+.slider{
+    width:100%;
+    overflow:hidden;
+    padding:10px 0;
+}
+
+.slide-track{
+    display:flex;
+    width:max-content;
+    animation:scroll 20s linear infinite;
+}
+
+.slide-track img{
+    width:300px;
+    height:200px;
+    border:3px solid black;
+    margin-right:15px;
+    border-radius:10px;
+}
+
+@keyframes scroll{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
+</style>
+<h3> About Us</h3>
+<h2><p>
+The Land King Restaurant is a perfect place to enjoy delicious food in a comfortable and friendly atmosphere.<br>
+ We offer a wide variety of Indian, Chinese, and Fast Food dishes prepared with fresh ingredients by experienced 
+ chefs.<br>
+  Our restaurant provides excellent facilities such as air-conditioned dining halls, free Wi-Fi, family seating,
+   online<br>
+   ordering, and home delivery services. We are committed to maintaining high standards of cleanliness, hygiene,
+    and <br>
+   customer satisfaction. At The Land King Restaurant, our goal is to provide every guest with a memorable dining
+   <br> 
+   experience through quality food and outstanding hospitality.<br>
+</p>
+
+<p>
+The Land King Restaurant is a perfect place to enjoy delicious food with family and friends.<br>
+ We are known for our excellent service, clean environment, and comfortable dining experience.<br>
+</p>
+
+<p>
+We provide Indian, Chinese, and Fast Food dishes. Our facilities include AC dining halls,<br>
+ free Wi-Fi, family seating, online ordering, and home delivery services.<br>
+</p></h2>
+<h2 class="team"><i>Our Teams</i></h2>
+<div class="container">
+    <div class="box">
+        <img src="Blog-6-Regulation-round-up.jpg" width="300">
+        <p>Rated<q>&#9733;&#9733;&#9733;&#9733;&#9733</q></p>
+    </div>
+    <div class="box">
+        <img src="braun-blog-chef-apparel.jpg" width="300">
+         <p>Rated<q>&#9733;&#9733;&#9733;&#9733;&#9733</q></p>
+         
+    </div>
+</div>
+
+
+</div>
+
+</body>
+</body>
+</html>
